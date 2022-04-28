@@ -37,4 +37,11 @@ BookID   INT    REFERENCES Book   NOT NULL,
 AuthorID INT    REFERENCES Author NOT NULL
 );
 
+GRANT SELECT ON Book       TO bookish;
+GRANT SELECT ON Author     TO bookish;
+GRANT SELECT ON BookAuthor TO bookish;
+GRANT SELECT ON Usr        TO bookish;
+GRANT SELECT ON UsrSession TO bookish;
+GRANT SELECT ON BookCopy   TO bookish;
+
 COMMIT;
