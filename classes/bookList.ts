@@ -2,7 +2,7 @@ import Book from "./book";
 import bookQueryResult from "../interfaces/bookQueryResult";
 
 export default class BookList {
-    bookList: Book[] = [];
+    private readonly bookList: Book[] = [];
 
     constructor(bookListData: bookQueryResult[]) {
         bookListData.forEach(item => {
